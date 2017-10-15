@@ -21,4 +21,5 @@ CONTAINER ID        IMAGE                 COMMAND             CREATED           
 To test, use the port that was just located:
 
 	# ssh -p xxxx user@localhost 
+	(change user name and pass in start.sh as needed)
 
