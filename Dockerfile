@@ -20,7 +20,7 @@ ADD ./start.sh /start.sh
 RUN mkdir /var/run/sshd
 
 RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '' 
-# todo copy my sshd_config
+COPY sshd_config /etc/ssh/sshd_config
 
 RUN chmod 755 /start.sh
 # EXPOSE 22
