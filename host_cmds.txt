@@ -7,3 +7,8 @@ TAG=$NAME:$VER
 docker rm -f $NAME 
 docker build -t $TAG . 
 docker run --name $NAME -h $NAME -p 4422:22 $TAG
+
+# docker run --name $NAME -h $NAME -v /tmp:/host_tmp -p 4422:22 $TAG
+
+
+# ssh -p 4422 user@$(docker-machine.exe ip)
